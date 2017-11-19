@@ -1,0 +1,4 @@
+﻿  Reader.cpp
+f:\github\programmingcompapp\thanksgivingapplication\thanksgivingapplication\reader.cpp(20): warning C4101: 'iter': unreferenced local variable
+  ThanksgivingApplication.vcxproj -> F:\GitHub\ProgrammingCompApp\ThanksgivingApplication\Debug\ThanksgivingApplication.exe
+  ThanksgivingApplication.vcxproj -> F:\GitHub\ProgrammingCompApp\ThanksgivingApplication\Debug\ThanksgivingApplication.pdb (Partial PDB)
