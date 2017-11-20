@@ -10,11 +10,13 @@ using namespace std;
 using std::cin;
 using std::endl;*/
 // Function to read from a text file and store the data that is read.
+
+
 void readFile()
 {
 	cout << "We will now read from a text file that supplies a shopping list for Black Friday." << endl;
 
-	extern vector<string> TurkeyVec;
+	
 	int iter;
 
 	

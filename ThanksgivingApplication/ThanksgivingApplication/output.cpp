@@ -11,6 +11,7 @@ May the odds be ever in your favor! :P
 #include <queue>
 #include <sstream>
 #include "Reader.hpp"
+#include "output.h"
 using namespace std;
 
 int count = 0;
@@ -35,7 +36,7 @@ void output()
 		// This is where i run into trouble.... trying to read the contents of the turkeyvec
 		// And iterate through so i can output to a file
 		// Once this works then it is easy to make a queue output.
-		for (vector<string>::const_iterator it = )
+		// for (vector<string>::const_iterator it = )
 	}
 
 }
