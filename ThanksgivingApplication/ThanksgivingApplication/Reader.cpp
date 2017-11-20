@@ -1,5 +1,9 @@
 #include <iostream>
 #include "Reader.hpp"
+#include <locale>
+#include <algorithm>
+#include <iterator>
+#include <cstring>
 #include <string>
 #include <fStream>
 #include <cstdlib>
@@ -15,7 +19,7 @@ using std::endl;*/
 void readFile()
 {
 	cout << "We will now read from a text file that supplies a shopping list for Black Friday." << endl;
-
+	string vecArray[50][50];
 	vector<string> TurkeyVec;
 	int iter;
 
@@ -36,12 +40,42 @@ void readFile()
 
 		}
 		in.close();
-	 
-		for (vector<string>::const_iterator iter = TurkeyVec.begin(); iter != TurkeyVec.end(); ++iter)
+
+		while (!TurkeyVec.empty())
 		{
-			cout << *iter << endl;
+			TurkeyVec.pop_back();
 		}
-	
+	 
+		/*for (vector<string>::const_iterator iter = TurkeyVec.begin(); iter != TurkeyVec.end(); ++iter)
+		{
+
+		//	cout << *iter << endl;
+		}
+	*/
 	}else cout << "Didn't open";
 
 }
+
+// Thanks to Stack Overflow user 0x499602d2 we found this code to help us seperate out an integer from a string
+
+std::string extract_ints(std::ctype_base::mask category, std::string str, std::ctype<char> const& facet)
+{
+	using std::strlen;
+
+	char const *begin = &str.front(),
+		*end = &str.back();
+
+	auto res = facet.scan_is(category, begin, end);
+
+	begin = &res[0];
+	end = &res[strlen(res)];
+
+	return std::string(begin, end);
+}
+
+std::string extract_ints(std::string str)
+{
+	return extract_ints(std::ctype_base::digit, str,
+		std::use_facet<std::ctype<char>>(std::locale("")));
+}
+
