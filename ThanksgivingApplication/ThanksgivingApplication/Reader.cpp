@@ -16,7 +16,7 @@ void readFile()
 {
 	cout << "We will now read from a text file that supplies a shopping list for Black Friday." << endl;
 
-	
+	vector<string> TurkeyVec;
 	int iter;
 
 	
@@ -37,10 +37,10 @@ void readFile()
 		}
 		in.close();
 	 
-		/*for (vector<string>::const_iterator iter = TurkeyVec.begin(); iter != TurkeyVec.end(); ++iter)
+		for (vector<string>::const_iterator iter = TurkeyVec.begin(); iter != TurkeyVec.end(); ++iter)
 		{
 			cout << *iter << endl;
-		}*/
+		}
 	
 	}else cout << "Didn't open";
 

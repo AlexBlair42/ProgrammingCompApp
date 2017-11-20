@@ -15,7 +15,7 @@ int main()
 	cout << "Welcome to this Black Friday List Organizer!" << endl;
 	cout << "We will read in from a supplied list and organize it for you" << endl;
 	readFile();
-	Sorter();
+	//Sorter();
 
 
 

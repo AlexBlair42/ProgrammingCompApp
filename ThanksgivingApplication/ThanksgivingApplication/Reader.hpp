@@ -10,7 +10,7 @@ May the odds be ever in your favor! :P
 
 // Not sure wheather this should be in the header file or the reader.cpp
 // This needs to be visible to other files.
-vector<string> TurkeyVec;
+//vector<string> TurkeyVec;
 
 
 void readFile();

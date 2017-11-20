@@ -6,7 +6,7 @@
 #include "Reader.hpp"
 
 using namespace std;
-
+/**
 void Sorter() 
 {
 	int ite;
@@ -20,9 +20,11 @@ void Sorter()
 	}
 	
 
-	/*for (vector<string>::const_iterator ite = TurkeyVec.begin(); ite != TurkeyVec.end(); ++ite)
+	for (vector<string>::const_iterator ite = TurkeyVec.begin(); ite != TurkeyVec.end(); ++ite)
 	{
 		sorted.push_back(ite);
 	}
-	*/
+	
+	
 }
+**/
