@@ -14,7 +14,7 @@ void readFile()
 {
 	cout << "We will now read from a text file that supplies a shopping list for Black Friday." << endl;
 
-	vector<string> TurkeyVec;
+	extern vector<string> TurkeyVec;
 	int iter;
 
 	
